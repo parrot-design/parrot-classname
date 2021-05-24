@@ -1,0 +1,16 @@
+{
+  "name": "@parrotjs/rc-utils-classnames",
+  "version": "0.0.1",
+  "description": "一个库可以合并class",
+  "main": "index.js", 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parrot-design/parrot-rc-utils-classNames.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parrot-design/parrot-rc-utils-classNames/issues"
+  },
+  "homepage": "https://github.com/parrot-design/parrot-rc-utils-classNames#readme"
+}
