@@ -2,7 +2,7 @@
   "name": "@parrotjs/rc-utils-classnames",
   "version": "0.0.1",
   "description": "一个库可以合并class",
-  "main": "index.js", 
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/parrot-design/parrot-rc-utils-classNames.git"
@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/parrot-design/parrot-rc-utils-classNames/issues"
   },
-  "homepage": "https://github.com/parrot-design/parrot-rc-utils-classNames#readme"
+  "homepage": "https://github.com/parrot-design/parrot-rc-utils-classNames#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@parrotjs/rc-utils-whichtype": "0.0.1"
+  }
 }
