@@ -1,8 +1,14 @@
 {
-  "name": "@parrotjs/rc-utils-classnames",
-  "version": "0.0.1",
-  "description": "一个库可以合并class",
-  "main": "index.js",
+  "name": "parrot-rc-utils-classnames",
+  "version": "1.0.0",
+  "main": "dist/classnames.cjs.js",
+  "module": "dist/classnames.esm.js",
+  "umd": "dist/classnames.umd.js",
+  "types": "dist/types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/parrot-design/parrot-rc-utils-classNames.git"
@@ -13,8 +19,10 @@
     "url": "https://github.com/parrot-design/parrot-rc-utils-classNames/issues"
   },
   "homepage": "https://github.com/parrot-design/parrot-rc-utils-classNames#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "@parrotjs/rc-utils-whichtype": "0.0.1"
+  "devDependencies": {
+    "rollup": "^2.52.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.4"
   }
 }
