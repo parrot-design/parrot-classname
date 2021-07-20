@@ -16,19 +16,21 @@ export default {
             sourcemap: false,
         },
         {
-            file: pkg.umd,
+            file:pkg.umd,
             format: 'umd',
-            name: 'ParrotClassnames', // umd模块名称，相当于一个命名空间，会自动挂载到window下面
+            name: 'ParrotAxios', // umd模块名称，相当于一个命名空间，会自动挂载到window下面
             sourcemap: false,
             plugins: [terser()],
         },
     ],
-    plugins: [typescript({
-        tsconfigOverride: {
-            compilerOptions: {
-                module: 'ESNext',
+    plugins: [
+        typescript({
+            tsconfigOverride: {
+                compilerOptions: {
+                    module: 'ESNext',
+                },
             },
-        },
-        useTsconfigDeclarationDir: true, // 使用tsconfig中的声明文件目录配置
-    })],
+            useTsconfigDeclarationDir: true, // 使用tsconfig中的声明文件目录配置
+        }),
+    ],
 }

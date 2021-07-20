@@ -1,28 +1,33 @@
 {
-  "name": "parrot-rc-utils-classnames",
-  "version": "1.0.0",
-  "main": "dist/classnames.cjs.js",
-  "module": "dist/classnames.esm.js",
-  "umd": "dist/classnames.umd.js",
+  "name": "@parrotjs/classnames",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/parrotclassnames.cjs.js",
+  "module": "dist/parrotclassnames.esm.js",
+  "umd":"dist/parrotclassnames.umd.js",
   "types": "dist/types",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "prepub": "npm run build",
+    "pub": "sh release.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parrot-design/parrot-rc-utils-classNames.git"
+    "url": "git+https://github.com/parrot-design/parrot-mini-axios.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/parrot-design/parrot-rc-utils-classNames/issues"
+    "url": "https://github.com/parrot-design/parrot-mini-axios/issues"
   },
-  "homepage": "https://github.com/parrot-design/parrot-rc-utils-classNames#readme",
+  "homepage": "https://github.com/parrot-design/parrot-mini-axios#readme",
   "devDependencies": {
-    "rollup": "^2.52.2",
+    "husky": "^7.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.53.2",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.5"
   }
 }
