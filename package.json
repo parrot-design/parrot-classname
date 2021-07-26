@@ -5,6 +5,7 @@
   "main": "dist/parrotclassnames.cjs.js",
   "module": "dist/parrotclassnames.esm.js",
   "umd": "dist/parrotclassnames.umd.js",
+  "umdName":"ParrotClassname",
   "types": "dist/types",
   "scripts": {
     "prebuild": "rimraf dist",
