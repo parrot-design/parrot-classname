@@ -1,11 +1,11 @@
 {
   "name": "@parrotjs/classnames",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "main": "dist/parrotclassnames.cjs.js",
   "module": "dist/parrotclassnames.esm.js",
   "umd": "dist/parrotclassnames.umd.js",
-  "umdName":"ParrotClassname",
+  "umdName": "ParrotClassname",
   "types": "dist/types",
   "scripts": {
     "prebuild": "rimraf dist",
